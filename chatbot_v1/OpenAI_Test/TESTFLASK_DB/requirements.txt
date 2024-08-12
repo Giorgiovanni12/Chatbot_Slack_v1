@@ -1,0 +1,9 @@
+flask
+langchain
+langchain_openai
+langchain_community
+mysql-connector-python
+sqlalchemy
+python-dotenv
+pymysql
+timedelta

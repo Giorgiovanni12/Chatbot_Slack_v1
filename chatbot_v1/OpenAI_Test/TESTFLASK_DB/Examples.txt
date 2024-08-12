@@ -1,0 +1,42 @@
+[
+    {
+        "input": "Get me all active users from New York",
+        "query": "SELECT * FROM Users WHERE status = 'ACTIVE' AND city = 'New York'"
+    },
+    {
+        "input": "Find all products that are out of stock",
+        "query": "SELECT * FROM Products WHERE stock_quantity = 0"
+    },
+    {
+        "input": "List all employees hired in the last 30 days",
+        "query": "SELECT * FROM Employees WHERE hire_date >= CURDATE() - INTERVAL 30 DAY"
+    },
+    {
+        "input": "Show me the details of the order with ID 12345",
+        "query": "SELECT * FROM Orders WHERE order_id = 12345"
+    },
+    {
+        "input": "Retrieve all customer support tickets marked as urgent",
+        "query": "SELECT * FROM SupportTickets WHERE priority = 'URGENT'"
+    },
+    {
+        "input": "Get all the movies released in 2023",
+        "query": "SELECT * FROM Movies WHERE release_year = 2023"
+    },
+    {
+        "input": "Fetch all reservations for the conference room on the 5th floor",
+        "query": "SELECT * FROM Reservations WHERE room = 'Conference Room 5F'"
+    },
+    {
+        "input": "Find all users who haven't logged in for over a year",
+        "query": "SELECT * FROM Users WHERE last_login < CURDATE() - INTERVAL 1 YEAR"
+    },
+    {
+        "input": "Give me the contact information for the vendor with ID 789",
+        "query": "SELECT contact_name, contact_email, contact_phone FROM Vendors WHERE vendor_id = 789"
+    },
+    {
+        "input": "Show me all the books written by 'John Doe'",
+        "query": "SELECT * FROM Books WHERE author = 'John Doe'"
+    }
+]

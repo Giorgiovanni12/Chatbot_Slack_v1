@@ -1,0 +1,162 @@
+[
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a chatbot that helps Customer Success users to retrieve the necessary data via SQL query on a SQLite database."
+            },
+            {
+                "role": "user",
+                "content": "What are the numbers of available courts in the city of New York?"
+            },
+            {
+                "role": "assistant",
+                "content": "The available courts will be retrieved by this query: SELECT * FROM courts WHERE status = 'OPEN' AND cityName = 'New York'"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a chatbot that helps Customer Success users to retrieve the necessary data via SQL query on a SQLite database."
+            },
+            {
+                "role": "user",
+                "content": "What are the bookings for the user John Doe?"
+            },
+            {
+                "role": "assistant",
+                "content": "These are the bookings for the user John Doe: retrieve with this query: SELECT * FROM bookings WHERE last_name = 'Doe' AND first_name = 'John'"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a chatbot that helps Customer Success users to retrieve the necessary data via SQL query on a SQLite database."
+            },
+            {
+                "role": "user",
+                "content": "Give me all the users that speak Spanish"
+            },
+            {
+                "role": "assistant",
+                "content": "These are all the users that speak Spanish, and this is the query used: SELECT * FROM Users WHERE language = 'es'"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a chatbot that helps Customer Success users to retrieve the necessary data via SQL query on a SQLite database."
+            },
+            {
+                "role": "user",
+                "content": "Can you give me the email of the user with ID 123?"
+            },
+            {
+                "role": "assistant",
+                "content": "This is the email of the user ID 123: retrieve with this query: SELECT email FROM Users WHERE user_id = 123"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a chatbot that helps Customer Success users to retrieve the necessary data via SQL query on a SQLite database."
+            },
+            {
+                "role": "user",
+                "content": "Can you give me a list of all open courts that are also indoor?"
+            },
+            {
+                "role": "assistant",
+                "content": "These are all the courts that are open and indoor: retrieve with this query: SELECT * FROM courts WHERE status = 'OPEN' AND category = 'INDOOR'"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a chatbot that helps Customer Success users to retrieve the necessary data via SQL query on a SQLite database."
+            },
+            {
+                "role": "user",
+                "content": "What are the available tennis courts in the city of Los Angeles?"
+            },
+            {
+                "role": "assistant",
+                "content": "The available tennis courts will be retrieved by this query: SELECT * FROM courts WHERE status = 'OPEN' AND cityName = 'Los Angeles' AND type = 'Tennis'"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a chatbot that helps Customer Success users to retrieve the necessary data via SQL query on a SQLite database."
+            },
+            {
+                "role": "user",
+                "content": "What are the bookings for the user Jane Smith?"
+            },
+            {
+                "role": "assistant",
+                "content": "These are the bookings for the user Jane Smith: retrieve with this query: SELECT * FROM bookings WHERE last_name = 'Smith' AND first_name = 'Jane'"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a chatbot that helps Customer Success users to retrieve the necessary data via SQL query on a SQLite database."
+            },
+            {
+                "role": "user",
+                "content": "Give me all the users that speak French"
+            },
+            {
+                "role": "assistant",
+                "content": "These are all the users that speak French, and this is the query used: SELECT * FROM Users WHERE language = 'fr'"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a chatbot that helps Customer Success users to retrieve the necessary data via SQL query on a SQLite database."
+            },
+            {
+                "role": "user",
+                "content": "Can you give me the email of the user with ID 456?"
+            },
+            {
+                "role": "assistant",
+                "content": "This is the email of the user ID 456: retrieve with this query: SELECT email FROM Users WHERE user_id = 456"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a chatbot that helps Customer Success users to retrieve the necessary data via SQL query on a SQLite database."
+            },
+            {
+                "role": "user",
+                "content": "Can you give me a list of all open basketball courts?"
+            },
+            {
+                "role": "assistant",
+                "content": "These are all the basketball courts that are open: retrieve with this query: SELECT * FROM courts WHERE status = 'OPEN' AND type = 'Basketball'"
+            }
+        ]
+    }
+]
